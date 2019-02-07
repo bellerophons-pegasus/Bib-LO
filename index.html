@@ -18,11 +18,21 @@
       <section>
 
       </section>
+    
+        <div id="text"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="/script.js"></script>
+    <script>
+      $().ready(function(){
+        $.getJSON( "/test.json", function( data ) {
+        console.log(data);
+        $("#text").html(data["squadName"]);
+      });
+});
+    </script>
+<!--    <script src="/script.js"></script>-->
  
-    <div id="text"></div>
+
     
   </body>
 </html>
