@@ -1,7 +1,7 @@
     $().ready(function(){
         $.getJSON( "/test.json", function( data ) {
         console.log(data);
-        $("#text").html(data["text"]);
+        $("#text").html(data["squadName"]);
       });
     });
 
