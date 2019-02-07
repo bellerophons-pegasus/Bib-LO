@@ -19,33 +19,7 @@
 
       </section>
 
-<!--<script src="/demo.js"></script>-->
-<script>
-    var header = document.querySelector('header');
-    var section = document.querySelector('section');
-  
-    var requestURL = 'https://bellerophons-pegasus.github.io/lobib/test.json';
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-    
-    request.onload = function() {
-      var superHeroes = request.response;
-      populateHeader(superHeroes);
-      showHeroes(superHeroes);
-    }
-    
-    function populateHeader(jsonObj) {
-      var myH1 = document.createElement('h1');
-      myH1.textContent = jsonObj['squadName'];
-      header.appendChild(myH1);
-
-      var myPara = document.createElement('p');
-      myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-      header.appendChild(myPara);
-    }
-  </script>
+    <script src="https://bellerophons-pegasus.github.io/lobib/script.js"></script>
 
 
 </body>
