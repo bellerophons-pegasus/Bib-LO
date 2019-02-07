@@ -1,8 +1,11 @@
+    $().ready(function(){
+        $.getJSON( "/data.json", function( data ) {
+        console.log(data);
+        $("#text").html(data["text"]);
+      });
+    });
 
-<script>
-      
-      
-
+/*
       var header = document.querySelector('header');
       var section = document.querySelector('section');
 
@@ -27,4 +30,4 @@
         myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
         header.appendChild(myPara);
       }
-    </script>
+      */
