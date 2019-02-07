@@ -9,14 +9,14 @@
 
   <script>
     $().ready(function(){
-        $.getJSON( "/data.json", function( data ) {
+        $.getJSON( "/test.json", function( data ) {
         console.log(data);
-        $("#text").html(data["text"]);
+        $("#text").html(data["homeTown"]);
       });
     });
   </script>
 
-  <p>...After the script.</p>
+  <div id="text"></div>
 
 </body>
 
