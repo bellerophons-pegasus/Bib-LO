@@ -8,16 +8,37 @@
     request.send();
     
     request.onload = function() {
-      var superHeroes = request.response;
-      populateHeader(superHeroes);
-      showHeroes(superHeroes);
+      var glypticLiterature = request.response;
+      showLiterature(glypticLiterature);
     }
-    
-    function populateHeader(jsonObj) {
-      var myH1 = document.createElement('h1');
-      myH1.textContent = jsonObj['squadName'];
-      header.appendChild(myH1);
-      var myPara = document.createElement('p');
-      myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-      header.appendChild(myPara);
+
+function showLiterature(jsonObj) {
+  var litlist = jsonObj['literature'];
+      
+  for (var i = 0; i < litlist.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH2.textContent = litlist[i].date;
+    myPara1.textContent = 'Title: ' + litlist[i].workLabel;
+    myPara2.textContent = 'topics: ' + litlist[i].topics;
+        
+/*    var superPowers = litlist[i].powers;
+    for (var j = 0; j < superPowers.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);
     }
+*/
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
