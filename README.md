@@ -34,7 +34,7 @@ ORDER BY DESC(?date)
 LIMIT 500
 ```
 
-This can be executed on the "wikidata query service":https://query.wikidata.org/ and then downloaded as json and uploaded into this repository (test.json)
+This can be executed on the [wikidata query service](https://query.wikidata.org/) and then downloaded as json and uploaded into this repository (test.json)
 
 Todo: JSON should be CSL compatible (https://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html)
 
