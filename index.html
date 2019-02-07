@@ -1,38 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
 
-    <title>Our superheroes</title>
+<body>
 
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <p>Before the script...</p>
 
-  <body>
+  <script>
+    alert( 'Hello, world!' );
+  </script>
 
-      <header>
+  <p>...After the script.</p>
 
-      </header>
+</body>
 
-      <section>
-
-      </section>
-    
-        <div id="text"></div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script>
-      $().ready(function(){
-        $.getJSON( "/test.json", function( data ) {
-        console.log(data);
-        $("#text").html(data["squadName"]);
-      });
-});
-    </script>
-<!--    <script src="/script.js"></script>-->
- 
-
-    
-  </body>
 </html>
