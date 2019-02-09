@@ -44,7 +44,7 @@ function showLiterature(jsonObj) {
   }
 }
 
-function myFunction() {
+function searchAllFun() {
   // Declare variables
   var input, filter, searchArea, ref, a, i, txtValue;
   input = document.getElementById('searchAllSlot');
