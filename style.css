@@ -16,13 +16,13 @@ h1, h2 {
 /* header styles */
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-align: left;
 }
 
 header p {
-  font-size: 1.2rem;
-  text-align: left;
+  font-size: 0.9rem;
+  text-align: right;
 }
 
 /* section styles */
