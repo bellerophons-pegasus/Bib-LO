@@ -54,7 +54,7 @@ function searchAllFun() {
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < ref.length; i++) {
-    a = ref[i].getElementsByTagName("p")[0];
+    a = ref[i].getElementsByTagName("p");
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       ref[i].style.display = "";
