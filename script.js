@@ -49,7 +49,7 @@ function searchAllFun() {
   var input, filter, searchArea, ref, a, i, txtValue;
   input = document.getElementById('searchAllSlot');
   filter = input.value.toUpperCase();
-  searchArea = querySelector('section');
+  searchArea = document.querySelector('section');
   ref = searchArea.getElementsByClassName("referenceEntry");
 
   // Loop through all list items, and hide those who don't match the search query
