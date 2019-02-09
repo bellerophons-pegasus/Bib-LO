@@ -38,8 +38,11 @@ This can be executed on the [wikidata query service](https://query.wikidata.org/
 
 Todo: JSON should be CSL compatible (https://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html)
 
-With the JSON file and some HTML, CSS, and JS magic a nicely formatted annotated bibliography will be listed. 
-Because of CSL compatibility entries can be exported in any citation style. 
+With the JSON file and some HTML, CSS, and JS magic a nicely formatted annotated bibliography will be listed. An introduction to do this is provided by [Mozilla](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON).
+
+
+Open:
+If the json will be CSL compatibile, it is possible to export entries in any citation style. 
 
 
 Useful?
