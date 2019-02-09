@@ -16,7 +16,8 @@ function showLiterature(jsonObj) {
   var litlist = jsonObj['literature'];
       
   for (var i = 0; i < litlist.length; i++) {
-    var myArticle = document.createElement('article');
+    var bibReference = document.createElement('div');
+    bibReference.className = "referenceEntry";
     var myH2 = document.createElement('h2');
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
@@ -34,11 +35,11 @@ function showLiterature(jsonObj) {
     }
 */
 
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myList);
+    bibReference.appendChild(myH2);
+    bibReference.appendChild(myPara1);
+    bibReference.appendChild(myPara2);
+    bibReference.appendChild(myList);
 
-    section.appendChild(myArticle);
+    section.appendChild(bibReference);
   }
 }
