@@ -43,7 +43,7 @@ Because of CSL compatibility entries can be exported in any citation style.
 
 
 Useful?
-* https://github.com/itemsapi/itemsjs (faceted search)
+* https://github.com/itemsapi/itemsjs (faceted search); also this: https://www.itemsapi.com/blog/2017/11/25/search-engine-with-facets-in-javascript/
 * https://www.netlify.com/
 * https://github.com/netlify-templates/mkdocs-base
 * https://travis-ci.org/
