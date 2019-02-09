@@ -43,3 +43,23 @@ function showLiterature(jsonObj) {
     section.appendChild(bibReference);
   }
 }
+
+function myFunction() {
+  // Declare variables
+  var input, filter, searchArea, ref, a, i, txtValue;
+  input = document.getElementById('searchAllSlot');
+  filter = input.value.toUpperCase();
+  searchArea = querySelector('section');
+  ref = searchArea.getElementsByClassName("referenceEntry");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < ref.length; i++) {
+    a = ref[i].getElementsByTagName("p")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      ref[i].style.display = "";
+    } else {
+      ref[i].style.display = "none";
+    }
+  }
+}
