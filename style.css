@@ -40,16 +40,19 @@ h2 {
   letter-spacing: -3px;
   margin-bottom: 10px;
 }
+#searchArea{
+  text-align: center;
+}
 
 #searchAllSlot {
   background-image: url('https://bellerophons-pegasus.github.io/lobib/Vector_search_icon.svg'); /* Add a search icon to input */
   background-size: 1.5rem;
-  background-position: 6px 12px; /* Position the search icon */
+  background-position: 0.75rem 0.75rem; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 80%; /* Full-width */
   font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
+  padding: 12px 20px 12px 50px; /* Add some padding */
   border: 2px solid #ddd; /* Add a grey border */
-  border-radius: 10px;
-  margin-bottom: 12px; /* Add some space below the input */
+  border-radius: 1.5rem;
+  margin: 0 auto 12px auto; /* Add some space below the input */
 }
