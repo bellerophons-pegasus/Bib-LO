@@ -52,3 +52,4 @@ Useful?
 * https://travis-ci.org/
 * https://circleci.com/
 * https://github.com/felixhenninger/open-science-knowledge-base
+* https://www.jsdelivr.com/
