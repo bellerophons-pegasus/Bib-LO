@@ -44,6 +44,9 @@ With the JSON file and some HTML, CSS, and JS magic a nicely formatted annotated
 Open:
 If the json will be CSL compatibile, it is possible to export entries in any citation style. 
 
+additions:
+* show latest changes/ news
+
 
 Useful?
 * https://github.com/itemsapi/itemsjs (faceted search); also this: https://www.itemsapi.com/blog/2017/11/25/search-engine-with-facets-in-javascript/
