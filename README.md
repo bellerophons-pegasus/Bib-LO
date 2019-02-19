@@ -1,5 +1,5 @@
 # lobib
-A linked open bibliography display system.
+A linked open bibliography display system: https://bellerophons-pegasus.github.io/lobib/
 
 The plan:
 Data is on Wikidata and exported in JSON.
