@@ -1,0 +1,13 @@
+{
+  "name": "lobib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bellerophons-pegasus/lobib.git"
+  },
+  "scripts": {
+    "download": "wd sparql query.rq > result.json && jq -f flatten.jq result.json > test.json"
+  },
+  "dependencies": {
+    "wikidata-cli": "^7.1.0"
+  }
+}
