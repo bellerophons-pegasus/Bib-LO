@@ -14,6 +14,7 @@ Alternatively:
 * Install [wikidata-cli](https://www.npmjs.com/package/wikidata-cli), for instance via these steps:
   * [Install npm](https://www.npmjs.com/get-npm)
   * Run `npm install` in the repository directory
+  * To install wikidata-cli run: `npm install -g wikidata-cli`
 * Run  `wd sparql query.rq > result.json` followed by `jq -f flatten.jq result.json > test.json` 
 
 The last step can also be executed via `npm run download`.
