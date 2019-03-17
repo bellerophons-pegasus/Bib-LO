@@ -36,7 +36,13 @@ The current step is to add facets. This is done with [itemsJS](https://github.co
 The current test result is here: https://bellerophons-pegasus.github.io/lobib/testItemsJS/index.html
 
 ## Next steps
-* Take more information from Wikidata in order to be able to fully display the biblography entries.
+* Split up topics into list
+
+* Hide the main topic used in the Wikidata query to get the items (e. g. 'Aegean glyptic') 
+
+* Provide means to hide topics without filtering anything; E. g. many entries have 'archaeology' as a main subject, which is a bit too general for the intended reference list
+
+* Get more information from Wikidata in order to be able to fully display the biblography entries. But also:
 
 * It would be good to get [CSL JSON](https://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html) from Wikidata. For this [citation.js](https://citation.js.org/) was tested, but unfortunately not all needed properties (e. g. subtitle/P1680 or main subject/P921) are recognised or incorporated (see [issues on GitHub](https://github.com/larsgw/citation.js), esp. [#76](https://github.com/larsgw/citation.js/issues/76)). Thus either an own solution has to be implemented (only if no other way possible) or appropriate extensions have to be contributed to citation.js.
 
