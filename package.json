@@ -8,6 +8,7 @@
     "download": "wd sparql query.rq > result.json && jq -f flatten.jq result.json > test.json"
   },
   "dependencies": {
+    "itemsjs": "^1.0.42",
     "wikidata-cli": "^7.1.0"
   }
 }
