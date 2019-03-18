@@ -1,6 +1,7 @@
 var rows = [
     {
       "work": "http://www.wikidata.org/entity/Q58683544",
+      "qid" : "Q58683544",
       "date": "2018-05-14",
       "topics": ["archaeology",
 								"archaeology",
@@ -19,6 +20,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q59617011",
+      "qid" : "Q59617011",
       "date": "2017-11-12",
       "topics": ["archaeology",
 								"archaeology",
@@ -37,6 +39,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q58876236",
+      "qid" : "Q58876236",
       "date": "2016-08-04",
       "topics": ["archaeology",
 								"seal",
@@ -49,6 +52,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q56826129",
+      "qid" : "Q56826129",
       "date": "1998-03-01",
       "topics": ["archaeology",
 								"ring",
@@ -60,6 +64,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q56826110",
+      "qid" : "Q56826110",
       "date": "1997-07-01",
       "topics": ["archaeology",
 								"Lerna",
@@ -70,6 +75,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q58970943",
+      "qid" : "Q58970943",
       "date": "1995-01-01",
       "topics": ["archaeology",
 								"seal",
@@ -80,6 +86,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q57487659",
+      "qid" : "Q57487659",
       "date": "1993-01-01",
       "topics": [ "archaeology",
 								"sealing",
@@ -91,6 +98,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q56825960",
+      "qid" : "Q56825960",
       "date": "1992-03-01",
       "topics": ["archaeology",
 								"international relations",
@@ -101,6 +109,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q56825681",
+      "qid" : "Q56825681",
       "date": "1988-03-01",
       "topics": ["archaeology",
 								"Knossos",
@@ -111,6 +120,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q56825490",
+      "qid" : "Q56825490",
       "date": "1986-11-01",
       "topics": ["archaeology",
 								"Knossos",
@@ -122,6 +132,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q57487578",
+      "qid" : "Q57487578",
       "date": "1985-01-01",
       "topics": ["archaeology",
 								"Zakros",
@@ -134,6 +145,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q59617925",
+      "qid" : "Q59617925",
       "date": "1981-01-01",
       "topics": ["archaeology",
 								"Minoan sealstone",
@@ -147,8 +159,9 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q59617857",
+      "qid" : "Q59617857",
       "date": "1981-01-01",
-      "topics": ["archaeology", 
+      "topics": ["archaeology",
 								"sealing",
 								"Aegean glyptic",
 								"art of drawing",
@@ -158,6 +171,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q59617815",
+      "qid" : "Q59617815",
       "date": "1981-01-01",
       "topics": ["archaeology",
 								"forgery",
@@ -169,6 +183,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q59617487",
+      "qid" : "Q59617487",
       "date": "1981-01-01",
       "topics": ["archaeology",
 								"Minoan civilization",
@@ -182,6 +197,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q59617087",
+      "qid" : "Q59617087",
       "date": "1981-01-01",
       "topics": ["archaeology",
 								"forgery",
@@ -193,6 +209,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q57490997",
+      "qid" : "Q57490997",
       "date": "1968-01-01",
       "topics": ["Bronze Age",
 								"archaeology",
@@ -205,6 +222,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q57487616",
+      "qid" : "Q57487616",
       "date": "1967-01-01",
       "topics": ["Bronze Age",
 								"archaeology",
@@ -217,6 +235,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q57487565",
+      "qid" : "Q57487565",
       "date": "1967-01-01",
       "topics": ["Bronze Age",
 								"archaeology",
@@ -229,6 +248,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q61292379",
+      "qid" : "Q61292379",
       "date": "1963-01-01",
       "topics": ["Linear A",
 								"seal",
@@ -242,6 +262,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q59618656",
+      "qid" : "Q59618656",
       "date": "1925-01-01",
       "topics": ["archaeology",
 								"ring",
@@ -259,6 +280,7 @@ var rows = [
     },
     {
       "work": "http://www.wikidata.org/entity/Q61761384",
+      "qid" : "Q61761384",
       "topics": ["bibliography",
 								"Aegean glyptic"
               ],
