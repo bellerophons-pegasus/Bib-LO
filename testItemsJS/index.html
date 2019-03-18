@@ -61,7 +61,9 @@
             <td>
               <b>{{ item.workLabel }}</b>
               <br />
-              <a v-bind:href="item.work">Item on Wikidata</a>
+              <!-- <a v-bind:href="item.work">Item on Wikidata</a>-->
+             
+             <a v-bind:href="'https://www.wikidata.org/wiki/' + item.work">Item on Wikidata</a>
             </td>
             <td></td>
             <td>
