@@ -5,6 +5,7 @@
 <script src="test.js"></script>
 <script src="https://cdn.rawgit.com/itemsapi/itemsjs/master/dist/itemsjs.js"></script>
 <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+<script src="https://unpkg.com/vuejs-paginate@latest"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
 <div id="el">
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -52,6 +53,15 @@
       <div class="col-md-10 col-xs-10">
         <div class="breadcrumbs"></div>
         <div class="clearfix"></div>
+        <div class="pagination-bar text-center">
+          <paginate
+             :page-count="Math.ceil(searchResult.pagination.total / searchResult.pagination.per_page)"
+             :click-handler="goToPage"
+             :prev-text="'Prev'"
+             :next-text="'Next'"
+             :container-class="'pagination'">
+          </paginate>
+        </div>
         <!--<h3>List of items ({{ searchResult.pagination.total }})</h3>-->
         <table class="table table-striped">
           <tbody>
@@ -109,6 +119,7 @@ var configuration = {
 // the rows comes from external resources
 // https://github.com/itemsapi/itemsapi-example-data/blob/master/jsfiddle/imdb.js
 itemsjs = itemsjs(rows, configuration);
+Vue.component('paginate', VuejsPaginate)
 
 var vm = new Vue({
   el: '#el',
@@ -120,10 +131,15 @@ var vm = new Vue({
       filters[v] = [];
     })
 
+    var page = this.page || 1;
+    var per_page = this.per_page || 30;
+
     return {
       query: '',
       // initializing filters with empty arrays
       filters: filters,
+      page: page,
+      per_page: per_page,
     }
   },
   methods: {
@@ -134,14 +150,26 @@ var vm = new Vue({
       })
 
       this.filters = filters;
+      this.page = 1;
       this.query = '';
-    }
+    },
+    goToPage: function (page) {
+      this.page = page;
+      return page;
+    },
+  },
+  watch: {
+     query: function () {
+       this.page = 1;
+     }
   },
   computed: {
     searchResult: function () {
 
       var result = itemsjs.search({
         query: this.query,
+        page: this.page,
+        per_page: 10,
         filters: this.filters
       })
       return result
