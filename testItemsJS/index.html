@@ -131,13 +131,15 @@ var vm = new Vue({
       filters[v] = [];
     })
 
+    // adding pagination variables
     var page = this.page || 1;
-    var per_page = this.per_page || 30;
+    var per_page = this.per_page || 12;
 
     return {
       query: '',
       // initializing filters with empty arrays
       filters: filters,
+      // setting pagination variables
       page: page,
       per_page: per_page,
     }
