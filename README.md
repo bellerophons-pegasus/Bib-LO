@@ -59,3 +59,6 @@ The current test result is here: https://bellerophons-pegasus.github.io/lobib/te
 * https://circleci.com/
 * https://github.com/felixhenninger/open-science-knowledge-base
 * https://www.jsdelivr.com/
+
+## Other related links
+* https://janakiev.com/blog/wikidata-mayors/
