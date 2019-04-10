@@ -1,134 +1,273 @@
 {
   "literature": [
     {
-      "work": "http://www.wikidata.org/entity/Q58683544",
-      "date": "2018-05-14",
-      "topics": "archaeology // archaeology // seal // seal // sealing // Aegean glyptic // Mycenaean sealstone // sealing // Aegean glyptic // Mycenaean sealstone // Minoan sealstone // Minoan sealstone",
-      "workLabel": "CMS Beiheft 5"
+      "work": "http://www.wikidata.org/entity/Q61292379",
+      "date": "1963-01-01",
+      "topics": "archaeology // seal // Cretan hieroglyphs // Aegean glyptic // Scaraboid seal // Middle Bronze Age // Linear A",
+      "objects": "CMS XII 087",
+      "places": "",
+      "authors": "Victor E. G. Kenna",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "Seals and Script II"
     },
     {
-      "work": "http://www.wikidata.org/entity/Q59617011",
-      "date": "2017-11-12",
-      "topics": "archaeology // archaeology // seal // seal // sealing // Aegean glyptic // Mycenaean sealstone // sealing // Aegean glyptic // Mycenaean sealstone // Minoan sealstone // Minoan sealstone",
-      "workLabel": "CMS Beiheft 1"
+      "work": "http://www.wikidata.org/entity/Q56825490",
+      "date": "1986-11-01",
+      "topics": "archaeology // sealing // Aegean glyptic",
+      "objects": "",
+      "places": "Phaistos // Knossos",
+      "authors": "Judith Weingarten - Judith Weingarten",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "The Sealing Structures of Minoan Crete: MM II Phaistos to the Destruction of the Palace of Knossos"
     },
     {
-      "work": "http://www.wikidata.org/entity/Q58876236",
-      "date": "2016-08-04",
-      "topics": "archaeology // seal // sealing // Aegean glyptic // Mycenaean sealstone // Minoan sealstone",
-      "workLabel": "Iraklion, Archäologisches Museum: Die Siegelabdrücke von Kato Zakros. Unter Einbeziehung von Funden aus anderen Museen"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q56826129",
-      "date": "1998-03-01",
-      "topics": "archaeology // ring // forgery // Helladic period // Aegean glyptic",
-      "workLabel": "The 'Ring of Nestor'"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q56826110",
-      "date": "1997-07-01",
-      "topics": "archaeology // Lerna // sealing // Aegean glyptic",
-      "workLabel": "Another Look at Lerna: An EH IIB Trading Post?"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q58970943",
-      "date": "1995-01-01",
-      "topics": "archaeology // seal // Aegean glyptic // Minoan sealstone",
-      "workLabel": "Syrian Seals and the Evidence for Cultural Interaction between the Levant and Crete"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q57487659",
-      "date": "1993-01-01",
-      "topics": "archaeology // sealing // Aegean glyptic // Malia // Minoan Genius",
-      "workLabel": "The Five Roundels from Malia, with a Note on Two New Minoan Genii"
+      "work": "http://www.wikidata.org/entity/Q56825681",
+      "date": "1988-03-01",
+      "topics": "archaeology // sealing // Aegean glyptic",
+      "objects": "",
+      "places": "Phaistos // Knossos",
+      "authors": "Judith Weingarten - Judith Weingarten",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "The Sealing Structures of Minoan Crete: MM II Phaistos to the Destruction of the Palace of Knossos"
     },
     {
       "work": "http://www.wikidata.org/entity/Q56825960",
       "date": "1992-03-01",
       "topics": "archaeology // international relations // sealing // Aegean glyptic",
+      "objects": "",
+      "places": "",
+      "authors": "Judith Weingarten",
+      "authorstrings": "",
+      "editors": "",
       "workLabel": "The Multiple Sealing System of Minoan Crete and its Possible Antecedents in Anatolia"
     },
     {
-      "work": "http://www.wikidata.org/entity/Q56825681",
-      "date": "1988-03-01",
-      "topics": "archaeology // Knossos // Phaistos // sealing // Aegean glyptic",
-      "workLabel": "The Sealing Structures of Minoan Crete: MM II Phaistos to the Destruction of the Palace of Knossos"
+      "work": "http://www.wikidata.org/entity/Q56826110",
+      "date": "1997-07-01",
+      "topics": "archaeology // sealing // Aegean glyptic",
+      "objects": "",
+      "places": "Lerna",
+      "authors": "Judith Weingarten",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "Another Look at Lerna: An EH IIB Trading Post?"
     },
     {
-      "work": "http://www.wikidata.org/entity/Q56825490",
-      "date": "1986-11-01",
-      "topics": "archaeology // Knossos // Phaistos // Aegean glyptic // sealing",
-      "workLabel": "The Sealing Structures of Minoan Crete: MM II Phaistos to the Destruction of the Palace of Knossos"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q57487578",
-      "date": "1985-01-01",
-      "topics": "archaeology // Zakros // style // Aegean glyptic // Zakro Master // attribution",
-      "workLabel": "Aspects of tradition and innovation in the work of the Zakro master"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q59617925",
-      "date": "1981-01-01",
-      "topics": "archaeology // Minoan sealstone // Aegean glyptic // Mycenaean sealstone // computational science // seal // digital humanities",
-      "workLabel": "Analyse descriptive des sceaux créto-mycéniens"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q59617857",
-      "date": "1981-01-01",
-      "topics": "archaeology // sealing // Aegean glyptic // art of drawing // Minoan sealstone",
-      "workLabel": "Zur Problematik der Siegelzeichnung"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q59617815",
-      "date": "1981-01-01",
-      "topics": "archaeology // forgery // Aegean glyptic // Mycenaean sealstone // Minoan sealstone",
-      "workLabel": "Some early forgeries"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q59617487",
-      "date": "1981-01-01",
-      "topics": "archaeology // Minoan civilization // Helladic period // Aegean glyptic // Mycenaean sealstone // Minoan sealstone // attribution",
-      "workLabel": "The 'Jasper Lion Master'"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q59617087",
-      "date": "1981-01-01",
-      "topics": "archaeology // forgery // Aegean glyptic // Mycenaean sealstone // Minoan sealstone",
-      "workLabel": "Echt oder falsch?"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q57490997",
-      "date": "1968-01-01",
-      "topics": "Bronze Age // archaeology // bureaucracy // seal // Cyprus // Aegean glyptic",
-      "workLabel": "The seal use of Cyprus in the Bronze Age, III"
-    },
-    {
-      "work": "http://www.wikidata.org/entity/Q57487616",
-      "date": "1967-01-01",
-      "topics": "Bronze Age // archaeology // bureaucracy // seal // Cyprus // Aegean glyptic",
-      "workLabel": "The seal use of Cyprus in the Bronze Age"
+      "work": "http://www.wikidata.org/entity/Q56826129",
+      "date": "1998-03-01",
+      "topics": "archaeology // Helladic period // forgery // Aegean glyptic // ring",
+      "objects": "",
+      "places": "",
+      "authors": "Ingo Pini",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "The 'Ring of Nestor'"
     },
     {
       "work": "http://www.wikidata.org/entity/Q57487565",
       "date": "1967-01-01",
       "topics": "Bronze Age // archaeology // bureaucracy // seal // Cyprus // Aegean glyptic",
+      "objects": "",
+      "places": "",
+      "authors": "Victor E. G. Kenna",
+      "authorstrings": "",
+      "editors": "",
       "workLabel": "The seal use of Cyprus in the Bronze Age, II"
     },
     {
-      "work": "http://www.wikidata.org/entity/Q61292379",
-      "date": "1963-01-01",
-      "topics": "Linear A // seal // Cretan hieroglyphs // Scaraboid seal // Middle Bronze Age // Aegean glyptic // CMS XII 087",
-      "workLabel": "Seals and Script II"
+      "work": "http://www.wikidata.org/entity/Q57487578",
+      "date": "1985-01-01",
+      "topics": "archaeology // style // Zakro Master // Aegean glyptic // attribution",
+      "objects": "",
+      "places": "Zakros",
+      "authors": "Judith Weingarten",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "Aspects of tradition and innovation in the work of the Zakro master"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q57487616",
+      "date": "1967-01-01",
+      "topics": "Bronze Age // archaeology // bureaucracy // seal // Cyprus // Aegean glyptic",
+      "objects": "",
+      "places": "",
+      "authors": "Victor E. G. Kenna",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "The seal use of Cyprus in the Bronze Age"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q57487659",
+      "date": "1993-01-01",
+      "topics": "archaeology // sealing // Aegean glyptic // Minoan Genius",
+      "objects": "",
+      "places": "Malia",
+      "authors": "Judith Weingarten - Erik Hallager",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "The Five Roundels from Malia, with a Note on Two New Minoan Genii"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q57490997",
+      "date": "1968-01-01",
+      "topics": "Bronze Age // archaeology // bureaucracy // seal // Cyprus // Aegean glyptic",
+      "objects": "",
+      "places": "",
+      "authors": "Victor E. G. Kenna",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "The seal use of Cyprus in the Bronze Age, III"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q58683544",
+      "date": "1995-01-01",
+      "topics": "archaeology // archaeology // seal // seal // Mycenaean sealstone // Mycenaean sealstone // sealing // Aegean glyptic // sealing // Aegean glyptic // Minoan sealstone // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "",
+      "authorstrings": "",
+      "editors": "Ingo Pini - Jean-Claude Poursat",
+      "publisherLabel": "Propylaeum - Virtual Special Library of Classical Studies",
+      "workLabel": "CMS Beiheft 5"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q58683544",
+      "date": "1995-01-01",
+      "topics": "archaeology // archaeology // seal // seal // Mycenaean sealstone // Mycenaean sealstone // sealing // Aegean glyptic // sealing // Aegean glyptic // Minoan sealstone // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "",
+      "authorstrings": "",
+      "editors": "Ingo Pini - Jean-Claude Poursat",
+      "publisherLabel": "Gebr. Mann",
+      "workLabel": "CMS Beiheft 5"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q58876236",
+      "date": "2016-08-04",
+      "topics": "archaeology // seal // Mycenaean sealstone // sealing // Aegean glyptic // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "",
+      "authorstrings": "",
+      "editors": "Ingo Pini - Walter Müller",
+      "publisherLabel": "Propylaeum - Virtual Special Library of Classical Studies",
+      "workLabel": "Iraklion, Archäologisches Museum: Die Siegelabdrücke von Kato Zakros. Unter Einbeziehung von Funden aus anderen Museen"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q58970943",
+      "date": "1995-01-01",
+      "topics": "archaeology // seal // Aegean glyptic // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "Joan Aruz",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "Syrian Seals and the Evidence for Cultural Interaction between the Levant and Crete"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q59617011",
+      "date": "1981-01-01",
+      "topics": "archaeology // archaeology // seal // seal // Mycenaean sealstone // Mycenaean sealstone // sealing // Aegean glyptic // sealing // Aegean glyptic // Minoan sealstone // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "",
+      "authorstrings": "",
+      "editors": "Ingo Pini",
+      "publisherLabel": "Propylaeum - Virtual Special Library of Classical Studies",
+      "workLabel": "CMS Beiheft 1"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q59617011",
+      "date": "1981-01-01",
+      "topics": "archaeology // archaeology // seal // seal // Mycenaean sealstone // Mycenaean sealstone // sealing // Aegean glyptic // sealing // Aegean glyptic // Minoan sealstone // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "",
+      "authorstrings": "",
+      "editors": "Ingo Pini",
+      "publisherLabel": "Gebr. Mann",
+      "workLabel": "CMS Beiheft 1"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q59617087",
+      "date": "1981-01-01",
+      "topics": "archaeology // forgery // Mycenaean sealstone // Aegean glyptic // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "Ingo Pini",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "Echt oder falsch?"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q59617487",
+      "date": "1981-01-01",
+      "topics": "archaeology // Minoan civilization // Helladic period // Mycenaean sealstone // attribution // Aegean glyptic // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "John H. Betts",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "The 'Jasper Lion Master'"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q59617815",
+      "date": "1981-01-01",
+      "topics": "archaeology // forgery // Mycenaean sealstone // Aegean glyptic // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "John H. Betts",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "Some early forgeries"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q59617857",
+      "date": "1981-01-01",
+      "topics": "archaeology // sealing // Aegean glyptic // art of drawing // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "",
+      "authorstrings": "Gisela Burgfeld",
+      "editors": "",
+      "workLabel": "Zur Problematik der Siegelzeichnung"
+    },
+    {
+      "work": "http://www.wikidata.org/entity/Q59617925",
+      "date": "1981-01-01",
+      "topics": "archaeology // computational science // seal // digital humanities // Mycenaean sealstone // Aegean glyptic // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "Micheline van Effenterre - Henri van Effenterre",
+      "authorstrings": "",
+      "editors": "",
+      "workLabel": "Analyse descriptive des sceaux créto-mycéniens"
     },
     {
       "work": "http://www.wikidata.org/entity/Q59618656",
       "date": "1925-01-01",
-      "topics": "archaeology // ring // seal // Thespiae // forgery // Boeotia // counterfeit // signet ring // Minoan sealstone // Aegean glyptic // Mycenaean sealstone",
+      "topics": "archaeology // seal // counterfeit // Boeotia // forgery // Thespiae // Mycenaean sealstone // Aegean glyptic // signet ring // Minoan sealstone // ring",
+      "objects": "",
+      "places": "",
+      "authors": "Arthur Evans",
+      "authorstrings": "",
+      "editors": "",
       "workLabel": "‘The Ring of Nestor’: A Glimpse into the Minoan After-World and A Sepulchral Treasure of Gold Signet-Rings and Bead-Seals from Thisbê, Boeotia"
     },
     {
       "work": "http://www.wikidata.org/entity/Q61761384",
-      "topics": "bibliography // Aegean glyptic",
+      "date": "1991-01-01",
+      "topics": "archaeology // seal // bibliography // Mycenaean sealstone // sealing // Aegean glyptic // Minoan sealstone",
+      "objects": "",
+      "places": "",
+      "authors": "John G. Younger",
+      "authorstrings": "",
+      "editors": "Ingo Pini",
+      "publisherLabel": "Gebr. Mann",
       "workLabel": "A Bibliography for Aegean Glyptic in the Bronze Age"
     }
   ]

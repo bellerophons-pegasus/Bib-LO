@@ -1,14 +1,19 @@
-SELECT ?date ?work ?workLabel ?topics
+SELECT ?date ?work ?workLabel ?topics (GROUP_CONCAT(DISTINCT ?object_label; separator=" // ") AS ?objects) (GROUP_CONCAT(DISTINCT ?place_label; separator=" // ") AS ?places) (GROUP_CONCAT(?authorLabel; separator= " - ") AS ?authors) (GROUP_CONCAT(?authorstring; separator= " - ") AS ?authorstrings) (GROUP_CONCAT(?editorLabel; separator= " - ") AS ?editors) ?publisherLabel
 WITH {
   SELECT DISTINCT ?work WHERE {
     ?work wdt:P921 / (wdt:P361+ | wdt:P1269+ | (wdt:P31* / wdt:P279*) ) wd:Q58681669 .
   }
 } AS %works
 WITH {
-  SELECT (MAX(?dates) as ?datetime) ?work (GROUP_CONCAT(?topic_label; separator=" // ") AS ?topics) WHERE {
+  SELECT (MIN(?dates) as ?datetime) ?work (GROUP_CONCAT(?topic_label; separator=" // ") AS ?topics) WHERE {
     INCLUDE %works
-    ?work wdt:P921 ?topic . 
+    ?work wdt:P921 ?topic .
+           FILTER NOT EXISTS {
+              ?topic wdt:P31 wd:Q839954} .
+           FILTER NOT EXISTS {
+             ?topic wdt:P31 wd:Q220659}
     OPTIONAL { ?work wdt:P577 ?dates . }
+
     ?topic rdfs:label ?topic_label .  FILTER (lang(?topic_label) = 'en')
   }
   GROUP BY ?work
@@ -16,11 +21,33 @@ WITH {
 WHERE {
   INCLUDE %result
 
+  OPTIONAL { ?work wdt:P50 ?author .
+             ?author rdfs:label ?authorLabel . FILTER (lang(?authorLabel) = 'en')
+           }
+  # no extra label assignment here, because we already have an author string
+  OPTIONAL { ?work wdt:P2093 ?authorstring . }
+  OPTIONAL { ?work wdt:P98 ?editor .
+             ?editor rdfs:label ?editorLabel . FILTER (lang(?editorLabel) = 'en')
+           }
+  OPTIONAL { ?work wdt:P123 ?publisher . }
+
+  #collect related places (are in topic list; are instance of archaeological site
+  OPTIONAL {?work wdt:P921 ?place
+           FILTER EXISTS {?place wdt:P31 wd:Q839954}
+           ?place rdfs:label?place_label . FILTER (lang(?place_label) = 'en')
+              }
+  #collect related objects (are in topic list; are instance of archaeological artifact
+  OPTIONAL {?work wdt:P921 ?object .
+           FILTER EXISTS {?object wdt:P31 wd:Q220659}
+           ?object rdfs:label?object_label . FILTER (lang(?object_label) = 'en')
+              }
+
   # There is a problem with BC dates
   # BIND(xsd:date(?datetime) AS ?date)
   BIND(REPLACE(STR(?datetime), 'T.*', '') AS ?date)
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,da,de,es,fr,jp,nl,no,ru,sv,zh". }
 }
-ORDER BY DESC(?date)
+GROUP BY ?date ?work ?workLabel ?topics ?publisher ?publisherLabel
+ORDER BY ASC(?author)
 LIMIT 500
