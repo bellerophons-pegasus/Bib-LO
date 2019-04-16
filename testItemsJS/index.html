@@ -93,7 +93,7 @@
 
 <script >
 var configuration = {
-  searchableFields: ['workLabel', 'topics', 'date'],
+  searchableFields: ['workLabel', 'topics', 'date', 'places'],
   sortings: {
     name_asc: {
       field: 'workLabel',
@@ -118,6 +118,8 @@ var configuration = {
 
 // the rows comes from external resources
 // https://github.com/itemsapi/itemsapi-example-data/blob/master/jsfiddle/imdb.js
+
+//with json: var as = JSON.parse(jstring);
 itemsjs = itemsjs(rows, configuration);
 Vue.component('paginate', VuejsPaginate)
 
