@@ -5,10 +5,13 @@
     "url": "https://github.com/bellerophons-pegasus/lobib.git"
   },
   "scripts": {
-    "download": "wd sparql query.rq > result.json && jq -f flatten.jq result.json > test.json"
+    "download": "wd sparql query.rq > result.json && jq -f flatten.jq result.json > test.json",
+    "ids": "jq -r '.literature[].work' test.json | sort | uniq > ids.txt",
+    "csl": "while read id; do wcite add wcite.json $id; done < ids.txt"
   },
   "dependencies": {
     "itemsjs": "^1.0.42",
+    "wcite": "^0.4.0",
     "wikidata-cli": "^7.1.0"
   }
 }
