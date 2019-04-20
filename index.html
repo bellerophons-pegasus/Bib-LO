@@ -4,24 +4,94 @@
     <meta charset="utf-8">
     <title>Bibliography of the Aegean Glyptic</title>
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vuejs-paginate@latest"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="style.css">
+
+    <script src="reflist-wikidata.js"></script>
+    <script src="https://cdn.rawgit.com/itemsapi/itemsjs/master/dist/itemsjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
   </head>
 
   <body>
-
+    <div id="el">
       <header>
         <h1>Bibliography of the Aegean Glyptic</h1>
         <p>More information on Wikiversity: <a href="https://de.wikiversity.org/wiki/Wikiversity:Fellow-Programm_Freies_Wissen/Einreichungen/A_Linked_and_Open_Bibliography_for_Aegean_Glyptic_in_the_Bronze_Age">A Linked and Open Bibliography for Aegean Glyptic in the Bronze Age</a></p>
-        <div id="searchArea">
-          <input type="text" id="searchAllSlot" onkeyup="searchAllFun()" placeholder="Search titles...">
-        </div>
+
+        <nav class="navbar">
+          <div class="container">
+            <div id="navbar">
+              <form class="navbar-form">
+                <div class="form-group" id="searchArea">
+                  <input type="text" id="searchAllSlot" v-model="query" class="form-control" placeholder="Search">
+                </div>
+              </form>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
       </header>
 
-      <section>
+        <div class="container">
+          <div class="pagination-area">
+          <p>{{ searchResult.pagination.total }} results</p>
+            <div class="pagination-bar">
+              <paginate
+                 :page-count="Math.ceil(searchResult.pagination.total / searchResult.pagination.per_page)"
+                 :click-handler="goToPage"
+                 :prev-text="'Prev'"
+                 :next-text="'Next'"
+                 :container-class="'pagination'">
+              </paginate>
+            </div>
+            <p class="text-muted">Search performed in {{ searchResult.timings.search }} ms, facets in {{ searchResult.timings.facets }} ms</p>
+          </div>
 
-      </section>
+          <div class="row">
+            <div class="col-md-9 col-xs-9">
+              <!--<h3>List of items ({{ searchResult.pagination.total }})</h3>-->
+              <div class="table table-striped">
+                <div class ="tr item-row" v-for="item of searchResult.data.items">
+                  <p><span v-for="author in item.authors">{{ author }} </span><span v-for="authorstrg in item.authorstrings">{{ authorstrg }} </span><span v-for="editor in item.editors">{{ editor }} </span> &ndash; <b>{{item.workLabel}}</b> <br />
+                  ({{item.date }})</p>
+                  <!-- <a v-bind:href="item.work">Item on Wikidata</a>-->
 
-    <script src="https://bellerophons-pegasus.github.io/lobib/script.js"></script>
+                  <!-- <a v-bind:href="'https://www.wikidata.org/wiki/' + item.qid">Wikidata: {{ item.qid }}</a>-->
+                  <p>
+                    <span class="tags" v-for="tag in item.topics">{{ tag }}</span>
+                    <span class="tags" v-for="place in item.places">{{ place }}</span>
+                    <span class="tags" v-for="object in item.objects">{{ object }}</span>
+                  </p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="col-md-3 col-xs-3">
+              <div v-for="facet in searchResult.data.aggregations">
+                <h5 style="margin-bottom: 5px;"><strong style="color: #ff6347;">{{ facet.title }}</strong></h5>
+
+                <ul class="browse-list list-unstyled long-list" style="margin-bottom: 0;">
+                  <li v-for="bucket in facet.buckets">
+                  <div class="checkbox block" style="margin-top: 0; margin-bottom: 0;">
+                    <label>
+                      <!--<input class="checkbox" type="checkbox" v-on:click="updateFilters(facet.name, bucket.key)" v-model="filters[bucket.key]" value="{{ bucket.key }}" v-bind:value="isChecked2()">-->
+                      <!--<input class="checkbox" type="checkbox" v-on:click="updateFilters(facet.name, bucket.key)" v-model="filters[bucket.key]" v-bind:value="bucket.key">-->
+                      <input class="checkbox" type="checkbox" v-model="filters[facet.name]" v-bind:value="bucket.key">
+                      {{ bucket.key }} ({{ bucket.doc_count }})
+                    </label>
+                  </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+    <script src="itemjs-script.js"></script>
 
 
 </body>

@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  width: 800px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto !important;
 }
 
 h1, h2 {
@@ -20,8 +20,12 @@ h1 {
   text-align: left;
 }
 
+header {
+  margin-top: 1em;
+}
+
 header p {
-  font-size: 0.9rem;
+  font-size: 1.2em;
   text-align: right;
 }
 
@@ -40,6 +44,11 @@ h2 {
   letter-spacing: -3px;
   margin-bottom: 10px;
 }
+
+a, a:hover, a:focus {
+  color: #ff6347;
+}
+
 #searchArea{
   text-align: center;
 }
@@ -49,10 +58,56 @@ h2 {
   background-size: 1.5rem;
   background-position: 0.75rem 0.75rem; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 80%; /* Full-width */
+  width: 100%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 50px; /* Add some padding */
-  border: 2px solid #ddd; /* Add a grey border */
+  border: 2px solid #ff6347; /* Add a grey border */
   border-radius: 1.5rem;
   margin: 0 auto 12px auto; /* Add some space below the input */
+}
+
+#navbar p, #navbar .navbar-form, div.pagination-bar, p.pagination-area{
+  display: inline;
+}
+
+.pagination-area{
+  border-bottom: 1px solid #ddd;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #ff6347;
+  border-color: #ff6347;
+}
+
+.text-muted {
+  display: none;
+}
+
+div.table {
+  display: table;
+}
+
+div.tr {
+  display: table-row;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em !important;
+
+}
+
+div.item-row{
+}
+
+div.td {
+  display: table-cell;
+}
+
+span.tags {
+  font-size: 0.8em;
+  display: block;
+  float: left;
+  border-radius: 0.2em;
+  padding: 1px 3px;
+  margin: 2px;
+  background-color: #ddd;
+
 }

@@ -1,7 +1,7 @@
     var header = document.querySelector('header');
     var section = document.querySelector('section');
 
-    var requestURL = 'https://bellerophons-pegasus.github.io/lobib/test.json';
+    var requestURL = 'https://bellerophons-pegasus.github.io/lobib/testItemsJS/test-old.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
