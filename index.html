@@ -27,26 +27,26 @@
                   <input type="text" id="searchAllSlot" v-model="query" class="form-control" placeholder="Search">
                 </div>
               </form>
+              <span class="pagination-area justify-content-end">
+              <p id="result-counter">{{ searchResult.pagination.total }} results</p>
+                <span class="pagination-bar">
+                  <paginate
+                     :page-count="Math.ceil(searchResult.pagination.total / searchResult.pagination.per_page)"
+                     :click-handler="goToPage"
+                     :prev-text="'Prev'"
+                     :next-text="'Next'"
+                     :container-class="'pagination'">
+                  </paginate>
+                </span>
+              </span>
+
             </div><!--/.nav-collapse -->
+
           </div>
         </nav>
       </header>
-
+        <p class="text-muted">Search performed in {{ searchResult.timings.search }} ms, facets in {{ searchResult.timings.facets }} ms</p>
         <div class="container">
-          <div class="pagination-area">
-          <p>{{ searchResult.pagination.total }} results</p>
-            <div class="pagination-bar">
-              <paginate
-                 :page-count="Math.ceil(searchResult.pagination.total / searchResult.pagination.per_page)"
-                 :click-handler="goToPage"
-                 :prev-text="'Prev'"
-                 :next-text="'Next'"
-                 :container-class="'pagination'">
-              </paginate>
-            </div>
-            <p class="text-muted">Search performed in {{ searchResult.timings.search }} ms, facets in {{ searchResult.timings.facets }} ms</p>
-          </div>
-
           <div class="row">
             <div class="col-md-9 col-xs-9">
               <!--<h3>List of items ({{ searchResult.pagination.total }})</h3>-->

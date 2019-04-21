@@ -70,8 +70,21 @@ a, a:hover, a:focus {
   display: inline;
 }
 
-.pagination-area{
+.navbar{
   border-bottom: 1px solid #ddd;
+}
+
+#result-counter {
+  margin-right: 0.5em;
+  color: #aaa;
+}
+
+.pagination-area {
+  float: right;
+}
+
+ul.pagination {
+  margin: 0 0 -10px;
 }
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
@@ -88,13 +101,13 @@ div.table {
 }
 
 div.tr {
-  display: table-row;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 1em !important;
+  padding-bottom: 3.5em !important;
 
 }
 
 div.item-row{
+  margin-top: 0.5em !important;
 }
 
 div.td {
