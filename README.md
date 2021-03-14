@@ -1,4 +1,4 @@
-# lobib
+# Bib:LO - Bibliography: Linked & Open
 
 A linked open bibliography display system: <https://bellerophons-pegasus.github.io/lobib/>
 
