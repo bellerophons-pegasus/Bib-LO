@@ -1,6 +1,6 @@
 # Bib:LO - Bibliography: Linked & Open
 
-A linked open bibliography display system: <https://bellerophons-pegasus.github.io/bib-lo/>
+A linked open bibliography display system: https://bellerophons-pegasus.github.io/Bib-LO/
 
 Full project description on Wikiversity: https://de.wikiversity.org/wiki/Wikiversity:Fellow-Programm_Freies_Wissen/Einreichungen/A_Linked_and_Open_Bibliography_for_Aegean_Glyptic_in_the_Bronze_Age
 
